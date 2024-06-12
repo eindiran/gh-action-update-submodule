@@ -47,8 +47,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE
-    - uses: actions/checkout@v2
-    - uses: doanac/gh-action-update-submodule@master
+    - uses: actions/checkout@v4
+    - uses: foundriesio/gh-action-update-submodule@master
       with:
         remote-repo: https://source.foundries.io/factories/andy-corp/containers.git
         api-token: ${{ secrets.FOUNDRIES_API_TOKEN }}
